@@ -56,5 +56,8 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'role' =>\laratrust\middleware\laratrustRole::class,
+        'permision' =>\laratrust\middleware\laratrustPermission::class,
+        'ability' =>\laratrust\middleware\laratrustAbility::class,
     ];
 }
